@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Formulario</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    h2{
+        text-align: center;
+    }
+    a{
+        display: block;
+        text-align: center;
+    }
+</style>
+</head>
+
+<body class="paginas">
+
+<div class="contenedor">
+
+<h2>Formulario de opinión</h2>
+
+<form action="https://formsubmit.co/segura.jose_23081226@cetis054.edu.mx" method="POST">
+
+<p>Nombre Completo:</p>
+<input type="text" name="nombre_completo" required><br><br>
+
+<p>Te gusto nuestra pagina? </p>
+<select name="util">
+<option>Si</option>
+<option>No</option>
+</select><br><br>
+
+<p>Que fue lo que mas te gusto de esta pagina?</p>
+<input type="text" name="opinion" required><br><br>
+
+<p>Que te llamo la atencion?</p>
+<input type="text" name="gusto" required><br><br>
+
+<p>Como podriamos mejorar?</p>
+<textarea rows="4" cols="30" name="comentario" required></textarea><br><br>
+
+<input type="submit" value="Enviar" class="boton">
+
+<input type="hidden" name="_captcha" value="false">
+
+<!-- Redirige después de enviar -->
+<input type="hidden" name="_next" value="intro.html">
+
+</form>
+
+<br>
+<a href="intro.html" class="boton">Volver a introduccion</a>
+
+</div>
+
+</body>
+</html>
